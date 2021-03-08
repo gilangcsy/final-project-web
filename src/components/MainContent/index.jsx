@@ -5,41 +5,36 @@ import img from '../../assets/img/main1.png'
 import Carousel, { consts } from 'react-elastic-carousel';
 import './slider.css'
 
-class MainContent extends React.Component {
-    myArrow({ type, onClick, isEdge }) {
-        const pointer = type === consts.PREV ? '👈' : '👉'
-        return (
-            <Button onClick={onClick} disabled={isEdge}>
-                {pointer}
-            </Button>
-        )
-    }
-    render() {
-        return (
-            <>
-                <Container>
-                    <Row clasName="h-100">
-                        {/* <Col sm="12" md="4" lg={3}> */}
-                        <Col sm="12">
-                            <MainBox>
-                                <Images>
-                                    <img className="img-fluid" width="100" src={img}></img>
-                                </Images>
-                            </MainBox>
-                        </Col>
-                        {/* </Col> */}
-                        <Col sm="12" md={{ offset: 2, span: 10 }} lg={{ offset: 1, span: 11 }}>
-                            <DescBox>
-                                <DescTitle>
-                                    Various types of make up.
+const MainContent = (props) => {
+    return (
+        <>
+            <Container>
+                <Row>
+                    {/* <Col sm="12" md="4" lg={3}> */}
+                    <Col sm="12">
+                        <MainBox type={props.type}>
+                            <Images>
+                                <img className="img-fluid" width="100" src={img}></img>
+                            </Images>
+                        </MainBox>
+                    </Col>
+                    {/* </Col> */}
+
+                    <Col
+                        md={{ offset: props.mdoffset, span: 10 }}
+                        lg={{ offset: props.lgoffset, span: 11 }}
+                    >
+                        <DescBox type={props.type}>
+                            <DescTitle type={props.type}>
+                                {props.title}
                             </DescTitle>
-                                <Description>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                            <Description>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
                             </Description>
-                            </DescBox>
-                        </Col>
-                    </Row>
-                    {/* <Carousel itemsToShow={3} renderArrow={this.myArrow}>
+                        </DescBox>
+                    </Col>
+                </Row>
+                {/* <Carousel itemsToShow={3} renderArrow={this.myArrow}>
                         <img className="img-fluid" width="100" src={img}></img>
                         <img className="img-fluid" width="100" src={img}></img>
                         <img className="img-fluid" width="100" src={img}></img>
@@ -47,11 +42,9 @@ class MainContent extends React.Component {
                         <img className="img-fluid" width="100" src={img}></img>
                         <img className="img-fluid" width="100" src={img}></img>
                     </Carousel> */}
-                </Container>
-            </>
-        )
-    }
+            </Container>
+        </>
+    )
 }
-
 
 export default MainContent

@@ -21,7 +21,18 @@ const Home = () => {
                 <Sidebar isOpen={isOpen} toggle={toggle} />
                 <Navbar isOpen={isOpen} toggle={toggle} />
                 <Hero />
-                <MainContent />
+                <MainContent
+                    title="Various types of make up."
+                    type="upper"
+                    mdoffset="2"
+                    lgoffset="1"
+                />
+                <MainContent
+                    title="You need skincare too!"
+                    type="lower"
+                    mdoffset="0"
+                    lgoffset="0"
+                />
             </Router>
         </>
     )

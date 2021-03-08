@@ -1,16 +1,19 @@
+import { __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED } from 'react-dom/cjs/react-dom.development'
 import styled from 'styled-components'
 
 export const MainBox = styled.div`
     margin-top:20px;
     width:20%;
     height:auto;
-    background:#faf5f4;
+    background: ${props => props.type === 'upper' ? '#faf5f4' : '#e5eef2'};
     display: flex;
     justify-content: center;
+    align-self:end;
     align-items: center;
     position: absolute;
-    z-index:100;
+    z-index:2;
     top:47px;
+    right: ${props => props.type === 'lower' ? 0 : 1};
 
     @media screen and (max-width: 992px) {
         width:30%;
@@ -34,7 +37,7 @@ export const Images = styled.div`
 export const DescBox = styled.div`
     margin-top:20px;
     height:auto;
-    background:#e5eef2;
+    background: ${props => props.type === 'upper' ? '#e5eef2' : '#faf5f4'};
     padding:100px;
 
     @media screen and (max-width: 1200px) {
@@ -78,8 +81,7 @@ export const Description = styled.div`
     padding-top:20px;
 	margin: 0 auto;
     line-height: 120%;
-    text-align:left;
-    text-align:justify;
+    text-align:center;
     hyphens: auto;
 
     @media screen and (max-width: 992px) {

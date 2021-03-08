@@ -3,15 +3,16 @@ import { Link as LinkR } from 'react-router-dom'
 import { Link as LinkS } from 'react-scroll'
 import { FaTimes, FaSearch } from 'react-icons/fa'
 
-export const NavB = styled.nav`
+export const Nav = styled.nav`
 background: white;
+height:80px;
 /* margin-top: -80px; */
 display: flex;
 justify-content: center;
 align-items: center;
 font-size: 1rem;
-position: sticky;
 top: 0;
+position: sticky;
 z-index: 10;
 
 @media screen and (max-width: 960px) {

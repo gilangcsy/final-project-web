@@ -3,13 +3,13 @@ import { FaBars } from 'react-icons/fa'
 import { Container } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { NavB, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, Icon, CloseIcon, NavLogoMobile, SearchBox, SearchBtn, SearchTxt, IconSearch, SearchResult, TitleResult, DescResult } from './NavbarElements'
+import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, Icon, CloseIcon, NavLogoMobile, SearchBox, SearchBtn, SearchTxt, IconSearch, SearchResult, TitleResult, DescResult } from './NavbarElements'
 
 const Navbar = ({ toggle, isOpen }) => {
     return (
         <>
-            <Container>
-                <NavB>
+            <Container className="sticky-top">
+                <Nav>
                     <NavbarContainer>
                         <NavLogo to="/">
                             beaunature.
@@ -49,7 +49,7 @@ const Navbar = ({ toggle, isOpen }) => {
                             <FaBars />
                         </MobileIcon>
                     </NavbarContainer>
-                </NavB>
+                </Nav>
             </Container>
         </>
     )
