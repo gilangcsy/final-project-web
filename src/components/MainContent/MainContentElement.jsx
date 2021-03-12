@@ -1,4 +1,3 @@
-import { __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED } from 'react-dom/cjs/react-dom.development'
 import styled from 'styled-components'
 
 export const MainBox = styled.div`
@@ -13,6 +12,7 @@ export const MainBox = styled.div`
     position: absolute;
     z-index:2;
     top:47px;
+    margin-right:15px;
     right: ${props => props.type === 'lower' ? 0 : 1};
 
     @media screen and (max-width: 992px) {

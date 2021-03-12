@@ -5,15 +5,16 @@ import { FaTimes, FaSearch } from 'react-icons/fa'
 
 export const Nav = styled.nav`
 background: white;
-height:80px;
+height:75px;
 /* margin-top: -80px; */
 display: flex;
 justify-content: center;
 align-items: center;
 font-size: 1rem;
 top: 0;
-position: sticky;
-z-index: 10;
+width:100%;
+position: fixed;
+z-index: 999;
 
 @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
@@ -25,7 +26,7 @@ display: flex;
 /* justify-content: space-between; */
 height: 75px;
 position: relative;
-z-index: 1;
+z-index: 999;
 width:100%;
 padding: 0px;
 max-width: 1100px;

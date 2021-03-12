@@ -5,6 +5,8 @@ import '../assets/style.css'
 import { BrowserRouter as Router } from 'react-router-dom'
 import Hero from '../components/Hero'
 import MainContent from '../components/MainContent'
+import Catalog from '../components/Catalog'
+import Footer from '../components/Footer'
 
 const Home = () => {
     const [
@@ -33,6 +35,11 @@ const Home = () => {
                     mdoffset="0"
                     lgoffset="0"
                 />
+                <Catalog
+                    itemXs="1"
+                    itemLg="4"
+                />
+                <Footer />
             </Router>
         </>
     )

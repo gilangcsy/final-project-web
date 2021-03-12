@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 import myImg from '../../assets/img/hero.png'
 
-export const RowContainer = styled.div`
+export const HeroContainer = styled.div`
     height:auto;
     background:#faf5f4;
     padding: 60px;
+    margin-top:60px;
 
     @media screen and (max-width: 768px) {
         padding:20px;
@@ -43,7 +44,8 @@ export const HeroImg = styled.div`
 `
 
 export const HeroButton = styled.button`
-    margin-top:25px;
+    width:170px;
+    margin-top:15px;
     display: inline-block;
     font-weight: 400;
     color: #212529;

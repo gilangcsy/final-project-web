@@ -2,13 +2,14 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import img from '../../assets/img/hero.png'
 
-import { HeroTitle, HeroBg, HeroImg, RowContainer, HeroDesc, HeroButton } from './HeroElements'
+
+import { HeroTitle, HeroBg, RowContainer, HeroDesc, HeroButton, HeroContainer } from './HeroElements'
 
 const Hero = () => {
     return (
         <>
-            <Container>
-                <RowContainer className="d-flex align-items-center">
+            <HeroContainer>
+                <Container>
                     <Row className="d-flex align-items-center justify-content-center">
                         <Col xs={{ order: 2, span: 12 }} lg md={{ order: 1, span: 6 }}>
                             <HeroTitle>
@@ -28,8 +29,19 @@ const Hero = () => {
 
                         </Col>
                     </Row>
-                </RowContainer>
-            </Container>
+                    {/* <div className="styling-example">
+                    <Carousel itemsToShow={2}>
+                        <img className="img-fluid" width="100" src="../../assets/img/catalog1.png"></img>
+                        <img className="img-fluid" width="100" src="../../assets/img/catalog1.png"></img>
+                        <img className="img-fluid" width="100" src="../../assets/img/catalog1.png"></img>
+                        <img className="img-fluid" width="100" src="../../assets/img/catalog1.png"></img>
+                        <img className="img-fluid" width="100" src="../../assets/img/catalog1.png"></img>
+                        <img className="img-fluid" width="100" src="../../assets/img/catalog1.png"></img>
+                    </Carousel>
+                </div> */}
+                </Container>
+            </HeroContainer>
+
         </>
     )
 }

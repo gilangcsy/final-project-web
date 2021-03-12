@@ -3,7 +3,6 @@ import { Col, Container, Row, Button } from 'react-bootstrap'
 import { MainBox, DescBox, DescTitle, Description, Images } from './MainContentElement'
 import img from '../../assets/img/main1.png'
 import Carousel, { consts } from 'react-elastic-carousel';
-import './slider.css'
 
 const MainContent = (props) => {
     return (
@@ -34,14 +33,14 @@ const MainContent = (props) => {
                         </DescBox>
                     </Col>
                 </Row>
-                {/* <Carousel itemsToShow={3} renderArrow={this.myArrow}>
-                        <img className="img-fluid" width="100" src={img}></img>
-                        <img className="img-fluid" width="100" src={img}></img>
-                        <img className="img-fluid" width="100" src={img}></img>
-                        <img className="img-fluid" width="100" src={img}></img>
-                        <img className="img-fluid" width="100" src={img}></img>
-                        <img className="img-fluid" width="100" src={img}></img>
-                    </Carousel> */}
+                {/* <Carousel itemsToShow={1}>
+                    <img className="img-fluid" width="100" src={img}></img>
+                    <img className="img-fluid" width="100" src={img}></img>
+                    <img className="img-fluid" width="100" src={img}></img>
+                    <img className="img-fluid" width="100" src={img}></img>
+                    <img className="img-fluid" width="100" src={img}></img>
+                    <img className="img-fluid" width="100" src={img}></img>
+                </Carousel> */}
             </Container>
         </>
     )

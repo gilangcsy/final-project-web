@@ -8,8 +8,8 @@ import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, 
 const Navbar = ({ toggle, isOpen }) => {
     return (
         <>
-            <Container className="sticky-top">
-                <Nav>
+            <Nav>
+                <Container>
                     <NavbarContainer>
                         <NavLogo to="/">
                             beaunature.
@@ -49,8 +49,8 @@ const Navbar = ({ toggle, isOpen }) => {
                             <FaBars />
                         </MobileIcon>
                     </NavbarContainer>
-                </Nav>
-            </Container>
+                </Container>
+            </Nav>
         </>
     )
 }

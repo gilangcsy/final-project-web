@@ -1,0 +1,73 @@
+/* square buttons */
+.rec.rec-arrow {
+    outline: none !important;
+    background-color: white;
+    border: none !important;
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #e5989b !important;
+
+}
+
+.rec.rec-arrow:hover {
+    border-radius: 0;
+    outline: none !important;
+    background-color: white !important;
+    color: black !important;
+    border-color: inherit !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    color: #e5989b !important;
+}
+
+/* hide disabled buttons */
+.rec.rec-arrow:disabled {
+    visibility: hidden;
+}
+
+/* hide disabled buttons */
+.rec.rec-arrow:focus {
+    outline: none !important;
+    background-color: transparent !important;
+    color: black !important;
+    border: none !important;
+    border-color: inherit !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    color: #e5989b !important;
+}
+
+/* disable default outline on focused items */
+/* add custom outline on focused items */
+.rec-carousel-item:focus {
+    outline: none;
+    box-shadow: inset 0 0 1px 1px lightgrey;
+}
+
+/* .rec.rec-dot {
+    background-color: rgb(213, 206, 206);
+    box-shadow: 0 0 1px 3px rgb(213, 206, 206);
+}
+
+.rec.rec-dot:hover,
+.rec.rec-dot:focus {
+    box-shadow: 0 0 1px 3px #cfe394;
+    background-color: #cfe394;
+} */
+
+.rec.rec-dot {
+    background: rgb(213, 206, 206);
+    box-shadow: 0 0 1px 3px rgb(213, 206, 206);
+}
+
+.rec.rec-dot_active {
+    background: #cfe394;
+    box-shadow: 0 0 1px 3px #cfe394;
+}
+
+.rec.rec-dot:hover,
+.rec.rec-dot:focus {
+    box-shadow: 0 0 1px 3px #cfe394;
+    background-color: #cfe394;
+}
