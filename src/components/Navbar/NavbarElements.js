@@ -149,7 +149,9 @@ transition: 0.2s ease-in-out;
     }
 
 &.active {
-    border-bottom: 3px solid red;
+    color:black;
+        margin-top:-2px;
+        border-bottom: 2px solid black;
 }
 `
 export const SearchTxt = styled.input`

@@ -13,9 +13,11 @@ width:100%;
 height:auto;
 background:#e5989b;
 color:white;
-margin-left:100px;
-@media screen and (max-width: 767px) {
-    margin-left:0px;
+padding-left:60px;
+@media screen and (max-width: 768px) {
+    margin-left:0;
+    padding-top:20px;
+    padding-left:20px;
 }
 `
 
@@ -23,11 +25,22 @@ export const FooterHead = styled.div`
     font-weight: bold;
     padding-left:20px;
     padding-bottom:40px;
+    @media screen and (max-width: 768px) {
+        padding-left:0px;
+    }
+
+    @media screen and (max-width: 576px) {
+        padding-bottom:20px;
+    }
+    
 `
 
 export const FooterDesc = styled.div`
     padding-left:20px;
     cursor:pointer;
+    @media screen and (max-width: 768px) {
+        padding-left:0px;
+    }
 `
 
 export const AdviceBox = styled.div`
@@ -39,7 +52,7 @@ position: absolute;
 width:70%;
 height:auto;
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     width:100%;
     right:0;
     top:0;

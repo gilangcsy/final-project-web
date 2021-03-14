@@ -8,15 +8,15 @@ import { HeroTitle, HeroBg, RowContainer, HeroDesc, HeroButton, HeroContainer } 
 const Hero = () => {
     return (
         <>
-            <HeroContainer>
-                <Container>
+            <Container id="home">
+                <HeroContainer>
                     <Row className="d-flex align-items-center justify-content-center">
                         <Col xs={{ order: 2, span: 12 }} lg md={{ order: 1, span: 6 }}>
                             <HeroTitle>
                                 Shining, Shimering, Splendid
                             </HeroTitle>
                             <HeroDesc>
-                                A whole ner world, a whole new look. All you need is change.
+                                A whole new world, a whole new look. All you need is change.
                             </HeroDesc>
                             <HeroButton>
                                 Getting Started
@@ -39,8 +39,8 @@ const Hero = () => {
                         <img className="img-fluid" width="100" src="../../assets/img/catalog1.png"></img>
                     </Carousel>
                 </div> */}
-                </Container>
-            </HeroContainer>
+                </HeroContainer>
+            </Container>
 
         </>
     )

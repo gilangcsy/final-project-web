@@ -4,10 +4,10 @@ import myImg from '../../assets/img/hero.png'
 export const HeroContainer = styled.div`
     height:auto;
     background:#faf5f4;
-    padding: 60px;
+    padding: 50px;
     margin-top:60px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 576px) {
         padding:20px;
     }
 `

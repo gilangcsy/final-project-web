@@ -6,7 +6,7 @@ class Footer extends Component {
     render() {
         return (
             <>
-                <FooterContainer>
+                <FooterContainer id="footer">
                     <Container fluid>
                         <Row>
                             <Col xs={{ order: 2, span: 12 }} lg md={{ order: 1, span: 6 }} className="p-0">
@@ -46,7 +46,7 @@ class Footer extends Component {
                                         </Col>
                                         <Col>
                                             <FooterHead>
-                                                Our Social Media
+                                                Social Media
                                             </FooterHead>
                                             <FooterDesc>
                                                 Instagram

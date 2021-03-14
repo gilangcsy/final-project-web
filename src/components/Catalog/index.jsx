@@ -20,7 +20,7 @@ class Catalog extends React.Component {
     render() {
         return (
             <>
-                <Container>
+                <Container id="discover">
                     <Title
                         title="Best Seller"
                     />
@@ -66,12 +66,10 @@ class Catalog extends React.Component {
                         <Col>
                             <div className="styling-example mt-5">
                                 <Carousel breakPoints={this.breakPoints}>
-                                    <img className="img-fluid" width="100" src="../../assets/img/catalog1.png"></img>
-                                    <img className="img-fluid" width="100" src="../../assets/img/catalog1.png"></img>
-                                    <img className="img-fluid" width="100" src="../../assets/img/catalog1.png"></img>
-                                    <img className="img-fluid" width="100" src="../../assets/img/catalog1.png"></img>
-                                    <img className="img-fluid" width="100" src="../../assets/img/catalog1.png"></img>
-                                    <img className="img-fluid" width="100" src="../../assets/img/catalog1.png"></img>
+                                    <img className="img-fluid" width="300" src="../../assets/img/slides-1.png"></img>
+                                    <img className="img-fluid" width="400" src="../../assets/img/slides-2.png"></img>
+                                    <img className="img-fluid" width="300" src="../../assets/img/slides-4.png"></img>
+                                    <img className="img-fluid" width="300" src="../../assets/img/slides-5.png"></img>
                                 </Carousel>
                             </div>
                         </Col>

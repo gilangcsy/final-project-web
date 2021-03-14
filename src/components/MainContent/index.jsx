@@ -1,19 +1,18 @@
-import React, { Component } from 'react'
-import { Col, Container, Row, Button } from 'react-bootstrap'
+import React from 'react'
+import { Col, Container, Row } from 'react-bootstrap'
 import { MainBox, DescBox, DescTitle, Description, Images } from './MainContentElement'
 import img from '../../assets/img/main1.png'
-import Carousel, { consts } from 'react-elastic-carousel';
 
 const MainContent = (props) => {
     return (
         <>
-            <Container>
+            <Container id="about">
                 <Row>
                     {/* <Col sm="12" md="4" lg={3}> */}
                     <Col sm="12">
                         <MainBox type={props.type}>
                             <Images>
-                                <img className="img-fluid" width="100" src={img}></img>
+                                <img className="img-fluid" width={props.width} src={`../../assets/img/${props.img}`}></img>
                             </Images>
                         </MainBox>
                     </Col>

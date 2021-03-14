@@ -28,12 +28,16 @@ const Home = () => {
                     type="upper"
                     mdoffset="2"
                     lgoffset="1"
+                    img="main1.png"
+                    width="100"
                 />
                 <MainContent
                     title="You need skincare too!"
                     type="lower"
                     mdoffset="0"
                     lgoffset="0"
+                    img="skincare.png"
+                    width="auto"
                 />
                 <Catalog
                     itemXs="1"
