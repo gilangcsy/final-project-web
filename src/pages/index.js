@@ -37,7 +37,7 @@ const Home = () => {
                     mdoffset="0"
                     lgoffset="0"
                     img="skincare.png"
-                    width="auto"
+                    width="200"
                 />
                 <Catalog
                     itemXs="1"
