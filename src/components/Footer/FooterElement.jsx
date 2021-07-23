@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const FooterContainer = styled.div`
-background:#e5989b;
+background:#effff3;
 margin-top:120px;
 width:100%;
 height:auto;
@@ -11,8 +11,8 @@ padding:20px;
 export const FooterContent = styled.div`
 width:100%;
 height:auto;
-background:#e5989b;
-color:white;
+background:#effff3;
+color:black;
 padding-left:60px;
 @media screen and (max-width: 768px) {
     margin-left:0;
@@ -44,7 +44,7 @@ export const FooterDesc = styled.div`
 `
 
 export const AdviceBox = styled.div`
-background:#cfe394;
+background:#b6e5c2;
 padding:20px;
 top:-57px;
 right:50px;

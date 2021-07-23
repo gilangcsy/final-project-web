@@ -1,10 +1,15 @@
 import styled from 'styled-components'
+import { Row } from 'react-bootstrap'
+
+export const RowC = styled(Row)`
+    margin-top:0px;
+    `
 
 export const MainBox = styled.div`
     margin-top:20px;
     width:20%;
     height:auto;
-    background: ${props => props.type === 'upper' ? '#faf5f4' : '#e5eef2'};
+    background:#b6e5c2;
     display: flex;
     justify-content: center;
     align-self:end;
@@ -36,8 +41,8 @@ export const Images = styled.div`
 
 export const DescBox = styled.div`
     margin-top:20px;
-    height:auto;
-    background: ${props => props.type === 'upper' ? '#e5eef2' : '#faf5f4'};
+    height:350px;
+    background:#effff3;
     padding:100px;
 
     @media screen and (max-width: 1200px) {

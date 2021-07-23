@@ -3,7 +3,7 @@ import myImg from '../../assets/img/hero.png'
 
 export const HeroContainer = styled.div`
     height:auto;
-    background:#faf5f4;
+    background:#effff3;
     padding: 50px;
     margin-top:60px;
 
@@ -25,7 +25,7 @@ export const HeroDesc = styled.div`
     font-size:1.2rem;
     margin-top:15px;
     font-weight:medium;
-    color: #e5989b;
+    color: #11772D;
 `
 
 export const HeroBg = styled.div`
@@ -62,12 +62,12 @@ export const HeroButton = styled.button`
     line-height: 1.5;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     color: #fff;
-    background-color: #e5989b;
-    border-color: #e5989b;
+    background-color: #11772D;
+    border-color: #11772D;
 
     &:hover {
-        color: #e5989b;
-        background-color: white;
-        border-color: #e5989b;
+        color: #11772D;
+        background-color: #effff3;
+        border-color: #11772D;
     }
 `

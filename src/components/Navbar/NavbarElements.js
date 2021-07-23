@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { Link as LinkR } from 'react-router-dom'
-import { Link as LinkS } from 'react-scroll'
 import { FaTimes, FaSearch } from 'react-icons/fa'
+import { Link as LinkS } from 'react-router-dom'
 
 export const Nav = styled.nav`
 background: white;
@@ -33,7 +33,7 @@ max-width: 1100px;
 `
 
 export const NavLogo = styled(LinkR)`
-    color: #e5989b;
+    color: #11772D;
     justify-self: flex-start;
     cursor: pointer;
     font-size: 1.5rem;
@@ -48,12 +48,12 @@ export const NavLogo = styled(LinkR)`
 }
 
 &:hover {
-    color:#e5989b;
+    color:#11772D;
 }
 `
 
 export const NavLogoMobile = styled(LinkR)`
-color: #e5989b;
+color: #11772D;
 justify-self: flex-start;
 cursor: pointer;
 font-size: 1.5rem;
@@ -68,7 +68,7 @@ text-decoration:none !important;
 }
 
 &:hover {
-    color:#e5989b;
+    color:#11772D;
 }
 `
 
@@ -77,7 +77,7 @@ display: none;
 
 @media screen and (max-width: 767px) {
     display:block;
-    color: #e5989b;     
+    color: #11772D;     
     position:absolute;
     top:0;
     right:0;
@@ -91,7 +91,7 @@ display: none;
 `
 
 export const CloseIcon = styled(FaTimes)`
-    color: #e5989b;
+    color: #11772D;
     margin-top:-16px;
     margin-right:-25px;
 `

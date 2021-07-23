@@ -22,8 +22,8 @@ const Home = () => {
             <Router>
                 <Sidebar isOpen={isOpen} toggle={toggle} />
                 <Navbar isOpen={isOpen} toggle={toggle} />
-                <Hero />
-                <MainContent
+                {/* <Hero /> */}
+                {/* <MainContent
                     title="Various types of make up."
                     type="upper"
                     mdoffset="2"
@@ -38,12 +38,12 @@ const Home = () => {
                     lgoffset="0"
                     img="skincare.png"
                     width="200"
-                />
-                <Catalog
+                /> */}
+                {/* <Catalog
                     itemXs="1"
                     itemLg="4"
                 />
-                <Footer />
+                <Footer /> */}
             </Router>
         </>
     )

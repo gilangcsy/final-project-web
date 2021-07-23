@@ -1,6 +1,6 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import img from '../../assets/img/hero.png'
+import img from '../../assets/img/android.svg'
 
 
 import { HeroTitle, HeroBg, RowContainer, HeroDesc, HeroButton, HeroContainer } from './HeroElements'
@@ -13,10 +13,10 @@ const Hero = () => {
                     <Row className="d-flex align-items-center justify-content-center">
                         <Col xs={{ order: 2, span: 12 }} lg md={{ order: 1, span: 6 }}>
                             <HeroTitle>
-                                Shining, Shimering, Splendid
+                                KSM Android UPN "Veteran" Jakarta
                             </HeroTitle>
                             <HeroDesc>
-                                A whole new world, a whole new look. All you need is change.
+                                Official Webstie KSM Android UPN "Veteran" Jakarta
                             </HeroDesc>
                             <HeroButton>
                                 Getting Started

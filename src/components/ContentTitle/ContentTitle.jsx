@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Title = styled.h4`
-    margin-top:40px;
+    margin-top:90px;
     font-size: 1.5rem;
     font-weight: bold;
     padding-bottom: 20px;
@@ -25,7 +25,7 @@ export const Title = styled.h4`
         display: block;
         width: 40px;
         height: 3px;
-        background: #e5989b;
+        background: #11772D;
         bottom: 0;
         left: calc(50% - 20px);
     }
