@@ -37,7 +37,7 @@ export const SidebarMenu = styled.ul`
     }
 `
 
-export const SidebarLink = styled(LinkS)`
+export const SidebarLink = styled(LinkR)`
     color: #11772D;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight:500;

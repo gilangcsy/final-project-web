@@ -21,55 +21,15 @@ class Catalog extends React.Component {
         return (
             <>
                 <Container id="discover">
-                    <Title
-                        title="Best Seller"
-                    />
-                    <Row className=" mx-auto d-flex justify-content-around">
-                        <Col xs={12} sm={6} lg={2}>
-                            <CatalogElement
-                                title="Nivea Lip Balm"
-                                desc="Lorem ipsum sir dolot comet"
-                                price="Rp. 20.000,-"
-                                source="catalog1.png"
-                            />
-                        </Col>
-
-                        <Col xs={12} sm={6} lg={2}>
-                            <CatalogElement
-                                title="Nivea Lip Balm"
-                                desc="Lorem ipsum sir dolot comet"
-                                price="Rp. 20.000,-"
-                                source="catalog2.png"
-                            />
-                        </Col>
-                        <Col xs={12} sm={6} lg={2}>
-                            <CatalogElement
-                                title="Nivea Lip Balm"
-                                desc="Lorem ipsum sir dolot comet"
-                                price="Rp. 20.000,-"
-                                source="catalog3.png"
-                            />
-                        </Col>
-                        <Col xs={12} sm={6} lg={2}>
-                            <CatalogElement
-                                title="Nivea Lip Balm"
-                                desc="Lorem ipsum sir dolot comet"
-                                price="Rp. 20.000,-"
-                                source="catalog4.png"
-                            />
-                        </Col>
-                    </Row>
-                    <Title
-                        title="More From Wardah"
-                    />
+                    <Title title="Project Showcase KSM Android" />
                     <Row>
                         <Col>
                             <div className="styling-example mt-5">
                                 <Carousel breakPoints={this.breakPoints}>
-                                    <img className="img-fluid" width="300" src="../../assets/img/slides-1.png"></img>
-                                    <img className="img-fluid" width="400" src="../../assets/img/slides-2.png"></img>
-                                    <img className="img-fluid" width="300" src="../../assets/img/slides-4.png"></img>
-                                    <img className="img-fluid" width="300" src="../../assets/img/slides-5.png"></img>
+                                    <img className="img-fluid" width="300" src="../../assets/img/showcase.jpg"></img>
+                                    <img className="img-fluid" width="250" src="../../assets/img/showcase1.jpg"></img>
+                                    <img className="img-fluid" width="300" src="../../assets/img/showcase2.jpg"></img>
+                                    <img className="img-fluid" width="300" src="../../assets/img/showcase3.jpg"></img>
                                 </Carousel>
                             </div>
                         </Col>

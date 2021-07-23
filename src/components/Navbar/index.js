@@ -7,6 +7,9 @@ import Footer from '../Footer'
 import Hero from '../Hero'
 import Title from "../ContentTitle/"
 import Home from '../Home'
+import Catalog from "../Catalog/"
+import { SidebarContainer, SidebarWrapper, SidebarMenu, SidebarLink } from '../Sidebar/SidebarElements'
+
 import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, Icon, CloseIcon, NavLogoMobile, SearchBox, SearchBtn, SearchTxt, IconSearch, SearchResult, TitleResult, DescResult } from './NavbarElements'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
@@ -14,6 +17,21 @@ const Navbar = ({ toggle, isOpen }) => {
     return (
         <>
             <Router>
+                <SidebarContainer isOpen={isOpen}>
+                    <SidebarWrapper>
+                        <SidebarMenu>
+                            <SidebarLink to="/">
+                                Home
+                            </SidebarLink>
+                            <SidebarLink to="/about">
+                                About Us
+                            </SidebarLink>
+                            <SidebarLink to="/showcase">
+                                Project Showcase
+                            </SidebarLink>
+                        </SidebarMenu>
+                    </SidebarWrapper>
+                </SidebarContainer>
                 <Nav>
                     <Container>
                         <NavbarContainer>
@@ -44,32 +62,10 @@ const Navbar = ({ toggle, isOpen }) => {
                                 <NavItem>
                                     <NavLinks to="/about">About Us</NavLinks>
                                 </NavItem>
-                                {/* <NavItem>
-                                    <NavLinks
-                                        to="discover"
-                                        duration={700}
-                                        smooth={true}
-                                        spy={true}
-                                        exact='true'
-                                        offset={-70}
-                                    >Discover
-                                    </NavLinks>
-                                </NavItem> */}
+                                <NavItem>
+                                    <NavLinks to="/showcase">Project Showcase</NavLinks>
+                                </NavItem>
                             </NavMenu>
-                            {/* <SearchBox>
-                            <SearchTxt placeholder="Search here..." />
-                            <SearchBtn>
-                                <IconSearch />
-                            </SearchBtn>
-                        </SearchBox> */}
-                            {/* <SearchResult>
-                        <TitleResult>
-                            Product
-                        </TitleResult>
-                        <DescResult>
-                            Wardah Beauty Skincare
-                        </DescResult>
-                    </SearchResult> */}
                             <Icon isOpen={isOpen} onClick={toggle}>
                                 <CloseIcon />
                             </Icon>
@@ -107,6 +103,9 @@ const Navbar = ({ toggle, isOpen }) => {
                             quote="'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'"
                             pos="Ketua Umum"
                         />
+                    </Route>
+                    <Route path="/showcase" exact>
+                        <Catalog/>
                     </Route>
                 </Switch>
                 <Footer />

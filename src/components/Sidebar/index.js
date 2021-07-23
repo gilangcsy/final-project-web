@@ -7,32 +7,14 @@ const Sidebar = ({ isOpen, toggle }) => {
             <SidebarContainer isOpen={isOpen}>
                 <SidebarWrapper>
                     <SidebarMenu>
-                        <SidebarLink
-                            to="home"
-                            duration={700}
-                            smooth={true}
-                            spy={true}
-                            exact='true'
-                            offset={-70}
-                            onClick={toggle}>
+                        <SidebarLink to="/">
                             Home
                         </SidebarLink>
-                        <SidebarLink to="about"
-                            duration={700}
-                            smooth={true}
-                            spy={true}
-                            exact='true'
-                            offset={-70}
-                            onClick={toggle}>
+                        <SidebarLink to="/about">
                             About Us
                         </SidebarLink>
-                        <SidebarLink to="discover" duration={700}
-                            smooth={true}
-                            spy={true}
-                            exact='true'
-                            offset={-70}
-                            onClick={toggle}>
-                            Discover
+                        <SidebarLink to="/showcase">
+                            Project Showcase
                         </SidebarLink>
                     </SidebarMenu>
                 </SidebarWrapper>

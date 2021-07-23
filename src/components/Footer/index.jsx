@@ -12,36 +12,19 @@ class Footer extends Component {
                             <Col xs={{ order: 2, span: 12 }} lg md={{ order: 1, span: 6 }} className="p-0">
                                 <FooterContent>
                                     <Row className="no-gutters">
-                                        <Col>
-                                            <FooterHead>
-                                                Product
-                                            </FooterHead>
-                                            <FooterDesc>
-                                                Make Up
-                                            </FooterDesc>
-                                            <FooterDesc>
-                                                Skin Care
-                                            </FooterDesc>
-                                            <FooterDesc>
-                                                Hair Care
-                                            </FooterDesc>
-                                            <FooterDesc>
-                                                Body Care
-                                            </FooterDesc>
-                                            <FooterDesc>
-                                                Instaperfect
-                                            </FooterDesc>
-                                        </Col>
 
                                         <Col>
                                             <FooterHead>
-                                                Activities
+                                                Menu
                                             </FooterHead>
                                             <FooterDesc>
-                                                Shopping
+                                                Home
                                             </FooterDesc>
                                             <FooterDesc>
-                                                Marketplace
+                                                About Us
+                                            </FooterDesc>
+                                            <FooterDesc>
+                                                Project Showcase
                                             </FooterDesc>
                                         </Col>
                                         <Col>
