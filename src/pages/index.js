@@ -20,7 +20,6 @@ const Home = () => {
     return (
         <>
             <Router>
-                
                 <Navbar isOpen={isOpen} toggle={toggle} />
             </Router>
         </>

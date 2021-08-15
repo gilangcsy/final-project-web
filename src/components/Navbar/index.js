@@ -53,7 +53,7 @@ const Navbar = ({ toggle, isOpen }) => {
                                 exact='true'
                                 offset={70}
                             >
-                                b.
+                                Android UPNVJ
                             </NavLogoMobile>
                             <NavMenu>
                                 <NavItem>
@@ -105,7 +105,7 @@ const Navbar = ({ toggle, isOpen }) => {
                         />
                     </Route>
                     <Route path="/showcase" exact>
-                        <Catalog/>
+                        <Catalog />
                     </Route>
                 </Switch>
                 <Footer />
